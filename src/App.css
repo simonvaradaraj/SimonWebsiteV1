@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  background-color: #F5F5F5;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Navbar Section */
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+
+}
+
+.header * {
+  background-color: #F5F5F5;
+}
+
+
+.logo {
+  margin-left: 3rem;
+  border: 2px solid black;
+  padding: 5px;
+  
+  font-family: 'Aboreto', cursive
+
+}
+
+.links a{
+  text-decoration: none;
+  color: black;
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+}
+
+/* Body Section */
+
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  /* border: 1px solid orange; */
+}
+
+/* Content Section*/
+
+.content * {
+  width: 80vw;
+}
+
+/* placeholder Section */
+.placeholder {
+  width: 10vw;
+  /* border: 1px solid black; */
+}
+
+/* Icons Section */
+
+.icons {
+  /* border: 1px solid green; */
+  left: 0px;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.icons a{
+  text-decoration: underline;
+  color: black;
+  font-size: .9rem;
+  margin-bottom: 2vh;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+}
+
+
+/* Hero Section */
+
+.hero {
+  font-family: 'Libre Baskerville', serif;
+  height: 56vh;
+  /* border: 1px solid blue; */
+  padding-top: 14vh;
+  width: inherit;
+
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero--role {
+  cursor: pointer;
+  color: rgb(113, 0, 128);
+  text-decoration: underline;
+}
+
+.hero--role:hover {
+  cursor: pointer;
+  color: rgb(8, 167, 69);
+  transition: .5s;
+}
+
+
+strong {
+  background: linear-gradient(to right, #2b1de8, #892092, #dd00f3);
+  background-size: 150%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.hero--hello {
+  margin-bottom: 1vh;
+}
+
+.hero--info {
+  width: 60vw;
+  margin-top: 3vh;
+  line-height: 1.8rem;
+  /* border: 1px dotted #2b1de8; */
+}
+
+
+/* Animations */
+
+@keyframes glide  {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
