@@ -4,6 +4,7 @@
   margin:0;
   padding:0;
   background-color: #F5F5F5;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .App {
@@ -45,7 +46,6 @@
   color: black;
   margin-right: 3rem;
   font-size: 1rem;
-  font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
 
@@ -56,7 +56,7 @@
   flex-direction: row;
   width: 100vw;
   justify-content: center;
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
 }
 
 /* Content Section*/
@@ -68,13 +68,13 @@
 /* placeholder Section */
 .placeholder {
   width: 10vw;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* Icons Section */
 
 .icons {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   left: 0px;
   width: 10vw;
   display: flex;
@@ -89,7 +89,6 @@
   color: black;
   font-size: .9rem;
   margin-bottom: 2vh;
-  font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
 
@@ -97,7 +96,6 @@
 /* Hero Section */
 
 .hero {
-  font-family: 'Libre Baskerville', serif;
   height: 56vh;
   /* border: 1px solid blue; */
   padding-top: 14vh;
@@ -127,6 +125,9 @@
   transition: .5s;
 }
 
+.move {
+  border: 1px solid black;
+}
 
 strong {
   background: linear-gradient(to right, #2b1de8, #892092, #dd00f3);
@@ -147,6 +148,16 @@ strong {
   margin-top: 3vh;
   line-height: 1.8rem;
   /* border: 1px dotted #2b1de8; */
+}
+
+/* About Section */
+.about {
+  border: 1px solid gray;
+}
+
+.about--header h2 {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 

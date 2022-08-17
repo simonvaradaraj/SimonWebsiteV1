@@ -35,7 +35,7 @@ function Hero() {
     <div className="hero">
       <h4 className='hero--hello'>Hello, my name is</h4>
       <h1><strong>Simon Varadaraj.</strong></h1>
-      <h2>Its a pleasure to meet you.</h2>
+      <h2>Its a <span className='move'>pleasure</span> to meet you.</h2>
       <p className='hero--info'>I am a <span className='hero--role' onClick={() => setRole(rolechoose(role))}>{role}
       </span> currently enrolled at Texas A&M University for Computer Science. I want to create beautiful applications that have an impact on the world.</p>
     </div>
@@ -46,8 +46,9 @@ function Hero() {
 function About() {
   return (
     <div className="about">
-      <h2>About Me</h2>
-      <div className="line"></div>
+      <div className="about--header">
+        <h2>About Me</h2>
+      </div>
     </div>
   )
 }
